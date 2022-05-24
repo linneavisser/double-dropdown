@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+li {
+  display: inline;
+  position: relative;
+}
+ul ul.options {
+  position: absolute;
+  display: none;
+}
+li:hover ul.options {
+  display: flex;
+  gap: 2rem;
+}
+ul ul ul {
+  position: absolute;
+  display: none;
+}
+li:hover > ul {
+  display: block;
+}
